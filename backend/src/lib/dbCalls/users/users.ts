@@ -8,7 +8,7 @@ const UsersDB = class UsersDB {
   }
 
   static async createUserDB(data: UserInfo[]) {
-    return await UsersDB.__createUserDB(data);
+    return await UsersDB.__createUserDB(data); 
   }
 
   static async __findUsersDB(data: any = {}) {

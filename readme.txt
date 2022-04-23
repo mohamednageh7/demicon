@@ -1,6 +1,16 @@
 you can run the project 
-backend => yarn run dev
+backend => yarn run dev (or) docker compose up
 frontend => yarn start
+
+you can build the project
+backend => yarn run build
+forntend => yarn run build
+
+api for get data from Random user web site
+- http://localhost:5000/api/getRandomUser
+
+api for get user in the web application
+- http://localhost:5000/api/getUser
 
 *** Deployment  ***
 - I might use AWS EC2 or EKS(Elstic Kubernetes Services)
