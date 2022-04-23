@@ -1,0 +1,703 @@
+{
+  message: {
+    createEventDBError: Error: Events validation failed: date: Cast to date failed for value "new Date()" (type string) at path "date"
+        at ValidationError.inspect (E:\test task\backend\node_modules\mongoose\lib\error\validation.js:48:26)
+        at formatValue (internal/util/inspect.js:745:19)
+        at formatProperty (internal/util/inspect.js:1660:11)
+        at formatRaw (internal/util/inspect.js:987:9)
+        at formatValue (internal/util/inspect.js:774:10)
+        at formatProperty (internal/util/inspect.js:1660:11)
+        at formatRaw (internal/util/inspect.js:987:9)
+        at formatValue (internal/util/inspect.js:774:10)
+        at inspect (internal/util/inspect.js:319:10)
+        at Format.transform (E:\test task\backend\node_modules\logform\pretty-print.js:27:19) {
+      errors: {
+        date: CastError: Cast to date failed for value "new Date()" (type string) at path "date"
+            at SchemaDate.cast (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:354:11)
+            at SchemaDate.SchemaType.applySetters (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1180:12)
+            at model.$set (E:\test task\backend\node_modules\mongoose\lib\document.js:1407:20)
+            at model.$set (E:\test task\backend\node_modules\mongoose\lib\document.js:1153:14)
+            at model.Document (E:\test task\backend\node_modules\mongoose\lib\document.js:161:12)
+            at model.Model (E:\test task\backend\node_modules\mongoose\lib\model.js:114:12)
+            at new model (E:\test task\backend\node_modules\mongoose\lib\model.js:4831:15)
+            at Function.<anonymous> (E:\test task\backend\src\lib\dbCalls\events\events.ts:61:19)
+            at Generator.next (<anonymous>)
+            at E:\test task\backend\src\lib\dbCalls\events\events.ts:8:71 {
+          stringValue: '"new Date()"',
+          messageFormat: undefined,
+          kind: 'date',
+          value: 'new Date()',
+          path: 'date',
+          reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+          
+            assert.ok(false)
+          
+              at castDate (E:\test task\backend\node_modules\mongoose\lib\cast\date.js:40:10)
+              at SchemaDate.cast (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:352:12)
+              at SchemaDate.SchemaType.applySetters (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1180:12)
+              at model.$set (E:\test task\backend\node_modules\mongoose\lib\document.js:1407:20)
+              at model.$set (E:\test task\backend\node_modules\mongoose\lib\document.js:1153:14)
+              at model.Document (E:\test task\backend\node_modules\mongoose\lib\document.js:161:12)
+              at model.Model (E:\test task\backend\node_modules\mongoose\lib\model.js:114:12)
+              at new model (E:\test task\backend\node_modules\mongoose\lib\model.js:4831:15)
+              at Function.<anonymous> (E:\test task\backend\src\lib\dbCalls\events\events.ts:61:19)
+              at Generator.next (<anonymous>) {
+            generatedMessage: true,
+            code: 'ERR_ASSERTION',
+            actual: false,
+            expected: true,
+            operator: '=='
+          },
+          valueType: 'string'
+        }
+      },
+      _message: 'Events validation failed'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 13:27:15'
+}
+{
+  message: {
+    findEventsDBError: CastError: Cast to date failed for value "null" (type string) at path "date" for model "Events"
+        at model.Query.exec (E:\test task\backend\node_modules\mongoose\lib\query.js:4641:21)
+        at model.Query.Query.then (E:\test task\backend\node_modules\mongoose\lib\query.js:4740:15)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+      messageFormat: undefined,
+      stringValue: '"null"',
+      kind: 'date',
+      value: 'null',
+      path: 'date',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(false)
+      
+          at castDate (E:\test task\backend\node_modules\mongoose\lib\cast\date.js:40:10)
+          at SchemaDate.cast (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:352:12)
+          at SchemaDate.SchemaType.applySetters (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1180:12)
+          at SchemaDate.SchemaType._castForQuery (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1614:15)
+          at SchemaDate.castForQuery (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:387:17)
+          at SchemaDate.SchemaType.castForQueryWrapper (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1581:20)
+          at cast (E:\test task\backend\node_modules\mongoose\lib\cast.js:344:32)
+          at model.Query.Query.cast (E:\test task\backend\node_modules\mongoose\lib\query.js:5076:12)
+          at model.Query.Query._castConditions (E:\test task\backend\node_modules\mongoose\lib\query.js:2143:10)
+          at model.Query.<anonymous> (E:\test task\backend\node_modules\mongoose\lib\query.js:2170:8) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 18:23:39'
+}
+{
+  message: {
+    findEventsDBError: CastError: Cast to date failed for value "null" (type string) at path "date" for model "Events"
+        at model.Query.exec (E:\test task\backend\node_modules\mongoose\lib\query.js:4641:21)
+        at model.Query.Query.then (E:\test task\backend\node_modules\mongoose\lib\query.js:4740:15)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+      messageFormat: undefined,
+      stringValue: '"null"',
+      kind: 'date',
+      value: 'null',
+      path: 'date',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(false)
+      
+          at castDate (E:\test task\backend\node_modules\mongoose\lib\cast\date.js:40:10)
+          at SchemaDate.cast (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:352:12)
+          at SchemaDate.SchemaType.applySetters (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1180:12)
+          at SchemaDate.SchemaType._castForQuery (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1614:15)
+          at SchemaDate.castForQuery (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:387:17)
+          at SchemaDate.SchemaType.castForQueryWrapper (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1581:20)
+          at cast (E:\test task\backend\node_modules\mongoose\lib\cast.js:344:32)
+          at model.Query.Query.cast (E:\test task\backend\node_modules\mongoose\lib\query.js:5076:12)
+          at model.Query.Query._castConditions (E:\test task\backend\node_modules\mongoose\lib\query.js:2143:10)
+          at model.Query.<anonymous> (E:\test task\backend\node_modules\mongoose\lib\query.js:2170:8) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 18:24:16'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown operator: $match
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 18:57:20'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $regex. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:14:36'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $regex. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:14:37'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: text index required for $text query
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 27,
+      codeName: 'IndexNotFound'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:18:56'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: text index required for $text query
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 27,
+      codeName: 'IndexNotFound'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:18:56'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: Unrecognized pipeline stage name: '$search'
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 40324,
+      codeName: 'Location40324'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:26:53'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: Unrecognized pipeline stage name: '$search'
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 40324,
+      codeName: 'Location40324'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:26:53'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $regexMatch. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:33:11'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $regexMatch. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:33:11'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $addFields. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:36:42'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $addFields. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:36:43'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $getField. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:38:05'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $getField. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:38:06'
+}
+{
+  message: {
+    searchTitleDBError: MongoServerError: text index required for $text query
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 27,
+      codeName: 'IndexNotFound'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:52:54'
+}
+{
+  message: {
+    searchTitleDBError: MongoServerError: text index required for $text query
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 27,
+      codeName: 'IndexNotFound'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:52:57'
+}
+{
+  message: {
+    createUserDBError: Error: Users validation failed: gender: Path `gender` is required., location: Path `location` is required., email: Path `email` is required., name: Path `name` is required.
+        at ValidationError.inspect (D:\projects\denicon\backend\node_modules\mongoose\lib\error\validation.js:48:26)
+        at formatValue (node:internal/util/inspect:782:19)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at inspect (node:internal/util/inspect:347:10)
+        at Format.transform (D:\projects\denicon\backend\node_modules\logform\pretty-print.js:27:19) {
+      errors: {
+        gender: ValidatorError: Path `gender` is required.
+            at validate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1330:13)
+            at SchemaString.SchemaType.doValidate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1314:7)
+            at D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:2751:18
+            at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+          properties: {
+            validator: [Function (anonymous)],
+            message: 'Path `gender` is required.',
+            type: 'required',
+            path: 'gender',
+            value: undefined
+          },
+          kind: 'required',
+          path: 'gender',
+          value: undefined,
+          reason: undefined,
+          [Symbol(mongoose:validatorError)]: true
+        },
+        location: ValidatorError: Path `location` is required.
+            at validate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1330:13)
+            at SchemaString.SchemaType.doValidate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1314:7)
+            at D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:2751:18
+            at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+          properties: {
+            validator: [Function (anonymous)],
+            message: 'Path `location` is required.',
+            type: 'required',
+            path: 'location',
+            value: undefined
+          },
+          kind: 'required',
+          path: 'location',
+          value: undefined,
+          reason: undefined,
+          [Symbol(mongoose:validatorError)]: true
+        },
+        email: ValidatorError: Path `email` is required.
+            at validate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1330:13)
+            at SchemaString.SchemaType.doValidate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1314:7)
+            at D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:2751:18
+            at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+          properties: {
+            validator: [Function (anonymous)],
+            message: 'Path `email` is required.',
+            type: 'required',
+            path: 'email',
+            value: undefined
+          },
+          kind: 'required',
+          path: 'email',
+          value: undefined,
+          reason: undefined,
+          [Symbol(mongoose:validatorError)]: true
+        },
+        name: ValidatorError: Path `name` is required.
+            at validate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1330:13)
+            at SchemaString.SchemaType.doValidate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1314:7)
+            at D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:2751:18
+            at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+          properties: {
+            validator: [Function (anonymous)],
+            message: 'Path `name` is required.',
+            type: 'required',
+            path: 'name',
+            value: undefined
+          },
+          kind: 'required',
+          path: 'name',
+          value: undefined,
+          reason: undefined,
+          [Symbol(mongoose:validatorError)]: true
+        }
+      },
+      _message: 'Users validation failed'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-04-23 13:20:19'
+}
+{
+  message: {
+    createUserDBError: Error: Users validation failed: location: Path `location` is required.
+        at ValidationError.inspect (D:\projects\denicon\backend\node_modules\mongoose\lib\error\validation.js:48:26)
+        at formatValue (node:internal/util/inspect:782:19)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at inspect (node:internal/util/inspect:347:10)
+        at Format.transform (D:\projects\denicon\backend\node_modules\logform\pretty-print.js:27:19) {
+      errors: {
+        location: ValidatorError: Path `location` is required.
+            at validate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1330:13)
+            at SchemaString.SchemaType.doValidate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1314:7)
+            at D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:2751:18
+            at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+          properties: {
+            validator: [Function (anonymous)],
+            message: 'Path `location` is required.',
+            type: 'required',
+            path: 'location',
+            value: undefined
+          },
+          kind: 'required',
+          path: 'location',
+          value: undefined,
+          reason: undefined,
+          [Symbol(mongoose:validatorError)]: true
+        }
+      },
+      _message: 'Users validation failed'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-04-23 13:29:37'
+}
+{
+  message: {
+    createUserDBError: Error: Users validation failed: location: Cast to string failed for value "{
+      street: { number: 5536, name: 'Green Rd' },
+      city: 'Elko',
+      state: 'South Dakota',
+      country: 'United States',
+      postcode: 39179,
+      coordinates: { latitude: '82.0614', longitude: '128.4482' },
+      timezone: { offset: '+7:00', description: 'Bangkok, Hanoi, Jakarta' }
+    }" (type Object) at path "location"
+        at ValidationError.inspect (D:\projects\denicon\backend\node_modules\mongoose\lib\error\validation.js:48:26)
+        at formatValue (node:internal/util/inspect:782:19)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at inspect (node:internal/util/inspect:347:10)
+        at Format.transform (D:\projects\denicon\backend\node_modules\logform\pretty-print.js:27:19) {
+      errors: {
+        location: CastError: Cast to string failed for value "{
+          street: { number: 5536, name: 'Green Rd' },
+          city: 'Elko',
+          state: 'South Dakota',
+          country: 'United States',
+          postcode: 39179,
+          coordinates: { latitude: '82.0614', longitude: '128.4482' },
+          timezone: { offset: '+7:00', description: 'Bangkok, Hanoi, Jakarta' }
+        }" (type Object) at path "location"
+            at SchemaString.cast (D:\projects\denicon\backend\node_modules\mongoose\lib\schema\string.js:603:11)
+            at SchemaString.SchemaType.applySetters (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1189:12)
+            at model.$set (D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:1404:20)
+            at model.$set (D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:1148:14)
+            at model.Document (D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:161:12)
+            at model.Model (D:\projects\denicon\backend\node_modules\mongoose\lib\model.js:115:12)
+            at new model (D:\projects\denicon\backend\node_modules\mongoose\lib\model.js:4835:15)
+            at Array.<anonymous> (D:\projects\denicon\backend\node_modules\mongoose\lib\model.js:3354:17)
+            at _start (D:\projects\denicon\backend\node_modules\mongoose\lib\helpers\parallelLimit.js:27:37)
+            at parallelLimit (D:\projects\denicon\backend\node_modules\mongoose\lib\helpers\parallelLimit.js:23:5) {
+          stringValue: '"{\n' +
+            "  street: { number: 5536, name: 'Green Rd' },\n" +
+            "  city: 'Elko',\n" +
+            "  state: 'South Dakota',\n" +
+            "  country: 'United States',\n" +
+            '  postcode: 39179,\n' +
+            "  coordinates: { latitude: '82.0614', longitude: '128.4482' },\n" +
+            "  timezone: { offset: '+7:00', description: 'Bangkok, Hanoi, Jakarta' }\n" +
+            '}"',
+          messageFormat: undefined,
+          kind: 'string',
+          value: {
+            street: { number: 5536, name: 'Green Rd' },
+            city: 'Elko',
+            state: 'South Dakota',
+            country: 'United States',
+            postcode: 39179,
+            coordinates: { latitude: '82.0614', longitude: '128.4482' },
+            timezone: { offset: '+7:00', description: 'Bangkok, Hanoi, Jakarta' }
+          },
+          path: 'location',
+          reason: null,
+          valueType: 'Object'
+        }
+      },
+      _message: 'Users validation failed'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-04-23 13:30:31'
+}
+{
+  message: {
+    createUserDBError: MongoBulkWriteError: not authorized on demicon to execute command { insert: "users", documents: [ { name: "Ms Vicky Thompson", email: "vicky.thompson@example.com", location: "United Kingdom", gender: "female", _id: ObjectId('6263d58c8bab86710c0b4c27'), __v: 0, createdAt: new Date(1650709900037), updatedAt: new Date(1650709900037) } ], ordered: true, lsid: { id: UUID("eee13d7d-657e-4b25-a5c1-a754b685ddb9") }, $db: "demicon" }
+        at resultHandler (D:\projects\denicon\backend\node_modules\mongodb\src\bulk\common.ts:599:9)
+        at D:\projects\denicon\backend\node_modules\mongodb\src\utils.ts:521:9
+        at D:\projects\denicon\backend\node_modules\mongodb\src\operations\execute_operation.ts:135:9
+        at D:\projects\denicon\backend\node_modules\mongodb\src\cmap\connection_pool.ts:480:13
+        at handleOperationResult (D:\projects\denicon\backend\node_modules\mongodb\src\sdam\server.ts:615:12)
+        at Connection.onMessage (D:\projects\denicon\backend\node_modules\mongodb\src\cmap\connection.ts:440:11)
+        at MessageStream.<anonymous> (D:\projects\denicon\backend\node_modules\mongodb\src\cmap\connection.ts:267:56)
+        at MessageStream.emit (node:events:526:28)
+        at MessageStream.emit (node:domain:475:12)
+        at processIncomingData (D:\projects\denicon\backend\node_modules\mongodb\src\cmap\message_stream.ts:168:12) {
+      ok: 0,
+      code: 13,
+      codeName: 'Unauthorized',
+      writeErrors: [],
+      result: BulkWriteResult {
+        result: {
+          ok: 1,
+          writeErrors: [],
+          writeConcernErrors: [],
+          insertedIds: [
+            { index: 0, _id: new ObjectId("6263d58c8bab86710c0b4c27") }
+          ],
+          nInserted: 0,
+          nUpserted: 0,
+          nMatched: 0,
+          nModified: 0,
+          nRemoved: 0,
+          upserted: []
+        }
+      },
+      insertedDocs: [
+        {
+          name: 'Ms Vicky Thompson',
+          email: 'vicky.thompson@example.com',
+          location: 'United Kingdom',
+          gender: 'female',
+          _id: new ObjectId("6263d58c8bab86710c0b4c27"),
+          __v: 0,
+          createdAt: 2022-04-23T10:31:40.037Z,
+          updatedAt: 2022-04-23T10:31:40.037Z
+        }
+      ],
+      [Symbol(errorLabels)]: Set(0) {}
+    }
+  },
+  level: 'error',
+  timestamp: '2022-04-23 13:31:40'
+}

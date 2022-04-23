@@ -1,0 +1,4999 @@
+{
+  message: { db: 'mongodb://localhost:27017/zid' },
+  level: 'info',
+  timestamp: '2022-03-18 13:09:46'
+}
+{
+  message: { db: 'mongodb://localhost:27017/zid' },
+  level: 'info',
+  timestamp: '2022-03-18 13:14:01'
+}
+{
+  message: { db: 'mongodb://localhost:27017/zid' },
+  level: 'info',
+  timestamp: '2022-03-18 13:14:44'
+}
+{
+  message: { db: 'mongodb://localhost:27017/zid' },
+  level: 'info',
+  timestamp: '2022-03-18 13:18:10'
+}
+{
+  message: { db: 'mongodb://localhost:27017/zid' },
+  level: 'info',
+  timestamp: '2022-03-18 13:19:34'
+}
+{
+  message: { db: 'mongodb://localhost:27017/zid' },
+  level: 'info',
+  timestamp: '2022-03-18 13:20:22'
+}
+{
+  message: { db: 'mongodb://localhost:27017/zid' },
+  level: 'info',
+  timestamp: '2022-03-18 13:22:11'
+}
+{
+  message: { db: 'mongodb://localhost:27017/zid' },
+  level: 'info',
+  timestamp: '2022-03-18 13:24:33'
+}
+{
+  message: {
+    createEventDBError: Error: Events validation failed: date: Cast to date failed for value "new Date()" (type string) at path "date"
+        at ValidationError.inspect (E:\test task\backend\node_modules\mongoose\lib\error\validation.js:48:26)
+        at formatValue (internal/util/inspect.js:745:19)
+        at formatProperty (internal/util/inspect.js:1660:11)
+        at formatRaw (internal/util/inspect.js:987:9)
+        at formatValue (internal/util/inspect.js:774:10)
+        at formatProperty (internal/util/inspect.js:1660:11)
+        at formatRaw (internal/util/inspect.js:987:9)
+        at formatValue (internal/util/inspect.js:774:10)
+        at inspect (internal/util/inspect.js:319:10)
+        at Format.transform (E:\test task\backend\node_modules\logform\pretty-print.js:27:19) {
+      errors: {
+        date: CastError: Cast to date failed for value "new Date()" (type string) at path "date"
+            at SchemaDate.cast (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:354:11)
+            at SchemaDate.SchemaType.applySetters (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1180:12)
+            at model.$set (E:\test task\backend\node_modules\mongoose\lib\document.js:1407:20)
+            at model.$set (E:\test task\backend\node_modules\mongoose\lib\document.js:1153:14)
+            at model.Document (E:\test task\backend\node_modules\mongoose\lib\document.js:161:12)
+            at model.Model (E:\test task\backend\node_modules\mongoose\lib\model.js:114:12)
+            at new model (E:\test task\backend\node_modules\mongoose\lib\model.js:4831:15)
+            at Function.<anonymous> (E:\test task\backend\src\lib\dbCalls\events\events.ts:61:19)
+            at Generator.next (<anonymous>)
+            at E:\test task\backend\src\lib\dbCalls\events\events.ts:8:71 {
+          stringValue: '"new Date()"',
+          messageFormat: undefined,
+          kind: 'date',
+          value: 'new Date()',
+          path: 'date',
+          reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+          
+            assert.ok(false)
+          
+              at castDate (E:\test task\backend\node_modules\mongoose\lib\cast\date.js:40:10)
+              at SchemaDate.cast (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:352:12)
+              at SchemaDate.SchemaType.applySetters (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1180:12)
+              at model.$set (E:\test task\backend\node_modules\mongoose\lib\document.js:1407:20)
+              at model.$set (E:\test task\backend\node_modules\mongoose\lib\document.js:1153:14)
+              at model.Document (E:\test task\backend\node_modules\mongoose\lib\document.js:161:12)
+              at model.Model (E:\test task\backend\node_modules\mongoose\lib\model.js:114:12)
+              at new model (E:\test task\backend\node_modules\mongoose\lib\model.js:4831:15)
+              at Function.<anonymous> (E:\test task\backend\src\lib\dbCalls\events\events.ts:61:19)
+              at Generator.next (<anonymous>) {
+            generatedMessage: true,
+            code: 'ERR_ASSERTION',
+            actual: false,
+            expected: true,
+            operator: '=='
+          },
+          valueType: 'string'
+        }
+      },
+      _message: 'Events validation failed'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 13:27:15'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 13:29:39'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 13:31:36'
+}
+{
+  message: { event: Promise { <pending> } },
+  level: 'info',
+  timestamp: '2022-03-18 13:31:50'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 13:32:23'
+}
+{
+  message: {
+    event: {
+      title: 'Event 1',
+      description: 'This is event 1',
+      category: 'AI',
+      date: 2022-03-18T10:28:01.000Z,
+      isVirtual: true,
+      address: 'test address',
+      _id: new ObjectId("62345fc0202b1805346b7318"),
+      createdAt: 2022-03-18T10:32:32.324Z,
+      updatedAt: 2022-03-18T10:32:32.324Z,
+      __v: 0
+    }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 13:32:32'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 13:33:05'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 17:38:02'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 17:47:43'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 18:12:34'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 18:13:11'
+}
+{
+  message: { query: { search: 'text' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:13:27'
+}
+{
+  message: { query: { search: '', category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:19:50'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 18:21:21'
+}
+{
+  message: { query: { title: '', category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:21:55'
+}
+{
+  message: { query: { title: '', category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:22:01'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 18:22:43'
+}
+{
+  message: { data: { title: '', category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:22:57'
+}
+{
+  message: { query: { title: '', category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:22:57'
+}
+{
+  message: {
+    data: { title: 'null', category: 'null', address: 'null', date: 'null' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:23:39'
+}
+{
+  message: {
+    findEventsDBError: CastError: Cast to date failed for value "null" (type string) at path "date" for model "Events"
+        at model.Query.exec (E:\test task\backend\node_modules\mongoose\lib\query.js:4641:21)
+        at model.Query.Query.then (E:\test task\backend\node_modules\mongoose\lib\query.js:4740:15)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+      messageFormat: undefined,
+      stringValue: '"null"',
+      kind: 'date',
+      value: 'null',
+      path: 'date',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(false)
+      
+          at castDate (E:\test task\backend\node_modules\mongoose\lib\cast\date.js:40:10)
+          at SchemaDate.cast (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:352:12)
+          at SchemaDate.SchemaType.applySetters (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1180:12)
+          at SchemaDate.SchemaType._castForQuery (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1614:15)
+          at SchemaDate.castForQuery (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:387:17)
+          at SchemaDate.SchemaType.castForQueryWrapper (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1581:20)
+          at cast (E:\test task\backend\node_modules\mongoose\lib\cast.js:344:32)
+          at model.Query.Query.cast (E:\test task\backend\node_modules\mongoose\lib\query.js:5076:12)
+          at model.Query.Query._castConditions (E:\test task\backend\node_modules\mongoose\lib\query.js:2143:10)
+          at model.Query.<anonymous> (E:\test task\backend\node_modules\mongoose\lib\query.js:2170:8) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 18:23:39'
+}
+{
+  message: {
+    query: { title: 'null', category: 'null', address: 'null', date: 'null' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:23:40'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 18:23:59'
+}
+{
+  message: {
+    data: { title: 'null', category: 'null', address: 'null', date: 'null' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:24:16'
+}
+{
+  message: {
+    findEventsDBError: CastError: Cast to date failed for value "null" (type string) at path "date" for model "Events"
+        at model.Query.exec (E:\test task\backend\node_modules\mongoose\lib\query.js:4641:21)
+        at model.Query.Query.then (E:\test task\backend\node_modules\mongoose\lib\query.js:4740:15)
+        at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+      messageFormat: undefined,
+      stringValue: '"null"',
+      kind: 'date',
+      value: 'null',
+      path: 'date',
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(false)
+      
+          at castDate (E:\test task\backend\node_modules\mongoose\lib\cast\date.js:40:10)
+          at SchemaDate.cast (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:352:12)
+          at SchemaDate.SchemaType.applySetters (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1180:12)
+          at SchemaDate.SchemaType._castForQuery (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1614:15)
+          at SchemaDate.castForQuery (E:\test task\backend\node_modules\mongoose\lib\schema\date.js:387:17)
+          at SchemaDate.SchemaType.castForQueryWrapper (E:\test task\backend\node_modules\mongoose\lib\schematype.js:1581:20)
+          at cast (E:\test task\backend\node_modules\mongoose\lib\cast.js:344:32)
+          at model.Query.Query.cast (E:\test task\backend\node_modules\mongoose\lib\query.js:5076:12)
+          at model.Query.Query._castConditions (E:\test task\backend\node_modules\mongoose\lib\query.js:2143:10)
+          at model.Query.<anonymous> (E:\test task\backend\node_modules\mongoose\lib\query.js:2170:8) {
+        generatedMessage: true,
+        code: 'ERR_ASSERTION',
+        actual: false,
+        expected: true,
+        operator: '=='
+      },
+      valueType: 'string'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 18:24:16'
+}
+{
+  message: {
+    query: { title: 'null', category: 'null', address: 'null', date: 'null' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:24:16'
+}
+{
+  message: { data: { title: '', category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:24:36'
+}
+{
+  message: { query: { title: '', category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:24:36'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 18:26:17'
+}
+{
+  message: { query: { title: '', category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:26:29'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 18:27:51'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:28:31'
+}
+{
+  message: {
+    item: 'category',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:28:31'
+}
+{
+  message: {
+    item: 'address',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:28:31'
+}
+{
+  message: {
+    item: 'date',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:28:31'
+}
+{
+  message: { query: { title: '', category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:28:31'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 18:31:06'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:31:17'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:31:17'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:31:17'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:31:17'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:31:17'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:37:47'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:37:47'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:37:47'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:37:47'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:37:47'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:14'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:14'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:14'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:14'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:14'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:18'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:18'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:18'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:18'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:18'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:38'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:38'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:38'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:38'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:38'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:40:38'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:43:43'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:43:43'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:43:43'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:43:43'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:43:43'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:43:43'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:44:37'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:44:37'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:44:37'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:44:37'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:44:37'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:44:37'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:49:47'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:49:47'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:49:47'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:49:47'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:49:47'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:49:47'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:50:49'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:50:49'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:50:49'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:50:49'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:50:49'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:50:49'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:51:12'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:51:12'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:51:12'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:51:12'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:51:12'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:28'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:28'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:28'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:28'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:28'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:44'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:44'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:44'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:44'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:44'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:44'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:48'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:48'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:48'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:48'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:52:48'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:26'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:26'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:26'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:26'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:26'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:26'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:39'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:39'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:39'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:39'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:53:39'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: 'undefined', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:00'
+}
+{
+  message: {
+    item: 'category',
+    data: { title: 'undefined', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:00'
+}
+{
+  message: {
+    item: 'address',
+    data: { title: 'undefined', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:00'
+}
+{
+  message: { item: 'date', data: { title: 'undefined', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:00'
+}
+{
+  message: { query: { title: 'undefined' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:00'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:00'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: 'undefined', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:29'
+}
+{
+  message: {
+    item: 'category',
+    data: { title: 'undefined', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:29'
+}
+{
+  message: {
+    item: 'address',
+    data: { title: 'undefined', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:29'
+}
+{
+  message: { item: 'date', data: { title: 'undefined', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:29'
+}
+{
+  message: { query: { title: 'undefined' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:29'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:29'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:35'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:35'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:35'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:35'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:35'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:35'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:38'
+}
+{
+  message: {
+    item: 'category',
+    data: { title: '2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:38'
+}
+{
+  message: { item: 'address', data: { title: '2', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:38'
+}
+{
+  message: { item: 'date', data: { title: '2', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:38'
+}
+{
+  message: { query: { title: '2' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:54:38'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:18'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:30'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:30'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:30'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:30'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:30'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:30'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:32'
+}
+{
+  message: {
+    item: 'category',
+    data: { title: '2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:32'
+}
+{
+  message: { item: 'address', data: { title: '2', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:33'
+}
+{
+  message: { item: 'date', data: { title: '2', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:33'
+}
+{
+  message: { query: { title: '2' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:56:33'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 18:57:12'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:57:20'
+}
+{
+  message: {
+    item: 'category',
+    data: { title: '2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 18:57:20'
+}
+{
+  message: { item: 'address', data: { title: '2', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:57:20'
+}
+{
+  message: { item: 'date', data: { title: '2', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:57:20'
+}
+{
+  message: { search: { item: { '$match': undefined } } },
+  level: 'info',
+  timestamp: '2022-03-18 18:57:20'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown operator: $match
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 18:57:20'
+}
+{
+  message: { query: { title: '2' } },
+  level: 'info',
+  timestamp: '2022-03-18 18:57:20'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:08:47'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:05'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:05'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:05'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:05'
+}
+{
+  message: { search: { item: { '$match': undefined } } },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:05'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:05'
+}
+{
+  message: { search: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:05'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:05'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:09'
+}
+{
+  message: {
+    item: 'category',
+    data: { title: '2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:09'
+}
+{
+  message: { item: 'address', data: { title: '2', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:09'
+}
+{
+  message: { item: 'date', data: { title: '2', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:09'
+}
+{
+  message: { search: { item: { '$match': undefined } } },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:09'
+}
+{
+  message: { query: { title: '2' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:09'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:09:55'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:13'
+}
+{
+  message: {
+    item: 'category',
+    data: { title: '2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:13'
+}
+{
+  message: { item: 'address', data: { title: '2', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:13'
+}
+{
+  message: { item: 'date', data: { title: '2', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:13'
+}
+{
+  message: { search: { item: { '$match': undefined } }, data: { title: '2' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:13'
+}
+{
+  message: { query: { title: '2' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:13'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: 'event 2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:38'
+}
+{
+  message: {
+    item: 'category',
+    data: { title: 'event 2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:38'
+}
+{
+  message: {
+    item: 'address',
+    data: { title: 'event 2', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:38'
+}
+{
+  message: { item: 'date', data: { title: 'event 2', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:38'
+}
+{
+  message: {
+    search: { item: { '$match': undefined } },
+    data: { title: 'event 2' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:38'
+}
+{
+  message: { query: { title: 'event 2' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:38'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: 'Event 2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:48'
+}
+{
+  message: {
+    item: 'category',
+    data: { title: 'Event 2', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:48'
+}
+{
+  message: {
+    item: 'address',
+    data: { title: 'Event 2', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:48'
+}
+{
+  message: { item: 'date', data: { title: 'Event 2', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:48'
+}
+{
+  message: {
+    search: { item: { '$match': undefined } },
+    data: { title: 'Event 2' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:48'
+}
+{
+  message: { query: { title: 'Event 2' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:10:48'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:14:28'
+}
+{
+  message: {
+    item: 'title',
+    data: { title: '', category: '', address: '', date: '' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:14:36'
+}
+{
+  message: { item: 'category', data: { category: '', address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:14:36'
+}
+{
+  message: { item: 'address', data: { address: '', date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:14:36'
+}
+{
+  message: { item: 'date', data: { date: '' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:14:36'
+}
+{
+  message: { search: { item: { '$match': undefined } }, data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:14:36'
+}
+{
+  message: { search: {}, data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:14:36'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $regex. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:14:36'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:14:37'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $regex. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:14:37'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:14:37'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:18:43'
+}
+{
+  message: { search: {}, data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:18:56'
+}
+{
+  message: { search: {}, data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:18:56'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: text index required for $text query
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 27,
+      codeName: 'IndexNotFound'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:18:56'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:18:56'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: text index required for $text query
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 27,
+      codeName: 'IndexNotFound'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:18:56'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:18:56'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:25:30'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:26:42'
+}
+{
+  message: {
+    search: { category: undefined, address: undefined, date: undefined },
+    data: {}
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:26:53'
+}
+{
+  message: { search: {}, data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:26:53'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: Unrecognized pipeline stage name: '$search'
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 40324,
+      codeName: 'Location40324'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:26:53'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:26:53'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: Unrecognized pipeline stage name: '$search'
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 40324,
+      codeName: 'Location40324'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:26:53'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:26:53'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:31:57'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:33:00'
+}
+{
+  message: {
+    search: { category: undefined, address: undefined, date: undefined },
+    data: {}
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:33:11'
+}
+{
+  message: { search: {}, data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:33:11'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $regexMatch. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:33:11'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:33:11'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $regexMatch. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:33:11'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:33:11'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:36:33'
+}
+{
+  message: {
+    search: { category: undefined, address: undefined, date: undefined },
+    data: {}
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:36:42'
+}
+{
+  message: { search: {}, data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:36:42'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $addFields. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:36:42'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:36:42'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $addFields. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:36:43'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:36:43'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:37:14'
+}
+{
+  message: {
+    search: { category: undefined, address: undefined, date: undefined },
+    data: {}
+  },
+  level: 'info',
+  timestamp: '2022-03-18 19:38:05'
+}
+{
+  message: { search: {}, data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:38:05'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $getField. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:38:05'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:38:06'
+}
+{
+  message: {
+    findEventsDBError: MongoServerError: unknown top level operator: $getField. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 2,
+      codeName: 'BadValue'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:38:06'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:38:06'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:42:18'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:43:31'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:47:20'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:49:23'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:49:23'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:49:23'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:49:23'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:06'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:06'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:06'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:07'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:42'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:54'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:54'
+}
+{
+  message: {
+    searchTitleDBError: MongoServerError: text index required for $text query
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 27,
+      codeName: 'IndexNotFound'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:52:54'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:54'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:54'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:54'
+}
+{
+  message: {
+    searchTitleDBError: MongoServerError: text index required for $text query
+        at MessageStream.messageHandler (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\connection.ts:753:20)
+        at MessageStream.emit (events.js:400:28)
+        at MessageStream.emit (domain.js:475:12)
+        at processIncomingData (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:168:12)
+        at MessageStream._write (E:\test task\backend\node_modules\mongoose\node_modules\mongodb\src\cmap\message_stream.ts:65:5)
+        at writeOrBuffer (internal/streams/writable.js:358:12)
+        at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+        at Socket.ondata (internal/streams/readable.js:731:22)
+        at Socket.emit (events.js:400:28)
+        at Socket.emit (domain.js:475:12) {
+      ok: 0,
+      code: 27,
+      codeName: 'IndexNotFound'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-03-18 19:52:57'
+}
+{
+  message: { title: 'e' },
+  level: 'info',
+  timestamp: '2022-03-18 19:52:57'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 19:55:46'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:55:57'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:55:57'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 19:55:57'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:55:57'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:55:57'
+}
+{
+  message: { title: 'e' },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:00'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:04'
+}
+{
+  message: { title: '2' },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:05'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:07'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:33'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:33'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:33'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:33'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:33'
+}
+{
+  message: { data: { category: 'backend' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:39'
+}
+{
+  message: { query: { category: 'backend' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:56:39'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 19:57:53'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 19:58:42'
+}
+{
+  message: { data: { category: 'backend' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:58:42'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:58:42'
+}
+{
+  message: { query: { category: 'backend' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:58:42'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:58:42'
+}
+{
+  message: { data: { category: 'backend' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:58:49'
+}
+{
+  message: { query: { category: 'backend' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:58:49'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:12'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:12'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:12'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:12'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:12'
+}
+{
+  message: { data: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:20'
+}
+{
+  message: { query: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:20'
+}
+{
+  message: { data: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:22'
+}
+{
+  message: { query: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:22'
+}
+{
+  message: { data: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:52'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:52'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:53'
+}
+{
+  message: { query: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:53'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:53'
+}
+{
+  message: { data: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:54'
+}
+{
+  message: { query: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:54'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 19:59:56'
+}
+{
+  message: { data: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:00:02'
+}
+{
+  message: { query: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:00:02'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:00:13'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:00:13'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:00:51'
+}
+{
+  message: { data: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:00:52'
+}
+{
+  message: { query: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:00:52'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:00:52'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:00:52'
+}
+{
+  message: { data: { title: 'undefined' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:14'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:14'
+}
+{
+  message: { query: { title: 'undefined' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:14'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:14'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:14'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:16'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:16'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:16'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:16'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:16'
+}
+{
+  message: { data: { category: 'backend' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:20'
+}
+{
+  message: { query: { category: 'backend' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:20'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:21'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:21'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:44'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:44'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:56'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:01:56'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:03:52'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:03:52'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:03:52'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:03:52'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:03:52'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:04:07'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:04:07'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:04:07'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:04:07'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:04:07'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:05:05'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:05:06'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:05:06'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:05:06'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:05:06'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:05:53'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:05:53'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:05:53'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:05:53'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:05:53'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:08:16'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:08:16'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:08:16'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:08:16'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:08:16'
+}
+{
+  message: { data: { address: 'test address 1' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:08:28'
+}
+{
+  message: { query: { address: 'test address 1' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:08:28'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:08:30'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:08:30'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:10:03'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:10:03'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:10:03'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:10:03'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:10:03'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:21'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:21'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:21'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:21'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:21'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:24'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:24'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:24'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:25'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:25'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:34'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:12:34'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:13:42'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:13:42'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:13:49'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:13:49'
+}
+{
+  message: { data: { address: 'test address 1', date: '18/03/2022 01:28' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:14:53'
+}
+{
+  message: { query: { address: 'test address 1', date: '18/03/2022 01:28' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:14:53'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 20:16:44'
+}
+{
+  message: { data: { date: Invalid Date } },
+  level: 'info',
+  timestamp: '2022-03-18 20:16:56'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:16:56'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:16:56'
+}
+{
+  message: { query: { date: Invalid Date } },
+  level: 'info',
+  timestamp: '2022-03-18 20:16:56'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:16:56'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 20:17:50'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:17:59'
+}
+{
+  message: { data: { date: Invalid Date } },
+  level: 'info',
+  timestamp: '2022-03-18 20:17:59'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:17:59'
+}
+{
+  message: { query: { date: Invalid Date } },
+  level: 'info',
+  timestamp: '2022-03-18 20:17:59'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:17:59'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 20:18:57'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:06'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:06'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:06'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:06'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:09'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:09'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:09'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:09'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:09'
+}
+{
+  message: { data: { date: Invalid Date } },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:13'
+}
+{
+  message: { query: { date: Invalid Date } },
+  level: 'info',
+  timestamp: '2022-03-18 20:19:13'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 20:20:30'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:20:42'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:20:42'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:20:42'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:20:43'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:20:43'
+}
+{
+  message: { data: { date: Invalid Date } },
+  level: 'info',
+  timestamp: '2022-03-18 20:20:46'
+}
+{
+  message: { query: { date: Invalid Date } },
+  level: 'info',
+  timestamp: '2022-03-18 20:20:46'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:21:56'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:21:56'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:21:56'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:21:56'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:21:56'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 20:23:46'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:03'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:03'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:03'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:04'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:04'
+}
+{
+  message: { data: { date: '2022-03-18T10:28:01.000Z' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:09'
+}
+{
+  message: { query: { date: '2022-03-18T10:28:01.000Z' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:09'
+}
+{
+  message: {
+    data: { address: 'test address', date: '2022-03-18T10:28:01.000Z' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:52'
+}
+{
+  message: {
+    query: { address: 'test address', date: '2022-03-18T10:28:01.000Z' }
+  },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:52'
+}
+{
+  message: { data: { address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:55'
+}
+{
+  message: { query: { address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:24:55'
+}
+{
+  message: { data: { address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:25:42'
+}
+{
+  message: { query: { address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:25:42'
+}
+{
+  message: { data: { address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:25:45'
+}
+{
+  message: { query: { address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:25:45'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:25:54'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:25:54'
+}
+{
+  message: { data: { date: '2022-03-18T10:28:01.000Z' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:34:20'
+}
+{
+  message: { query: { date: '2022-03-18T10:28:01.000Z' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:34:20'
+}
+{
+  message: { data: { date: '2022-03-18T10:28:01.000Z' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:34:45'
+}
+{
+  message: { query: { date: '2022-03-18T10:28:01.000Z' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:34:45'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:02'
+}
+{
+  message: { data: { date: '2022-03-18T10:28:01.000Z' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:02'
+}
+{
+  message: { query: { date: '2022-03-18T10:28:01.000Z' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:02'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:02'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:02'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:07'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:54'
+}
+{
+  message: { data: { date: 'undefined' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:54'
+}
+{
+  message: { query: { date: 'undefined' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:54'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:54'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:36:54'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:37:30'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:37:30'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:37:30'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:37:30'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:37:30'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:37:58'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:38:43'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:38:43'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:38:43'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:38:43'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:38:43'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:20'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:20'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:20'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:20'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:20'
+}
+{
+  message: { data: { address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:23'
+}
+{
+  message: { query: { address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:23'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:25'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:25'
+}
+{
+  message: { data: { category: 'AI', address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:33'
+}
+{
+  message: { query: { category: 'AI', address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:33'
+}
+{
+  message: { data: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:38'
+}
+{
+  message: { query: { category: 'AI' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:38'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:41'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:41'
+}
+{
+  message: { title: '1' },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:45'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:46'
+}
+{
+  message: { title: '3' },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:47'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:48'
+}
+{
+  message: { title: '2' },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:48'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:39:48'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:40:11'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:40:11'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:41:32'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:41:51'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:42:15'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:42:15'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:42:15'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:42:15'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:42:15'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:42:53'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:42:53'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:42:53'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:42:53'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:42:53'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:43:17'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:43:17'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:43:17'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:43:17'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:43:17'
+}
+{
+  message: { title: '2' },
+  level: 'info',
+  timestamp: '2022-03-18 20:43:20'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:43:23'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:45:37'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:45:37'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:45:37'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:45:37'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:45:37'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:45:46'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:45:46'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:46:40'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:46:40'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:46:40'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:46:40'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:46:40'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:17'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:17'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:42'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:42'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:47'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:47'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:47'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:47'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:47'
+}
+{
+  message: { data: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:52'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:47:52'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 20:48:17'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:48:50'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:48:51'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:48:51'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:48:54'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:48:57'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:54:26'
+}
+{
+  message: { query: { isVitual: 'undefined' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:54:26'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:54:26'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:55:38'
+}
+{
+  message: { query: { isVitual: 'undefined' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:55:38'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:55:39'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:55:43'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:55:43'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:55:43'
+}
+{
+  message: { query: { isVirtual: 'yes' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:55:46'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:56:20'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:56:20'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:56:20'
+}
+{
+  message: { db: 'mongodb://localhost:27017/event' },
+  level: 'info',
+  timestamp: '2022-03-18 20:58:13'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 20:59:43'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:59:43'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 20:59:43'
+}
+{
+  message: { query: { isVirtual: 'yes' } },
+  level: 'info',
+  timestamp: '2022-03-18 20:59:53'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 21:00:12'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 21:07:23'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 21:07:26'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 21:07:26'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 21:07:26'
+}
+{
+  message: { title: '' },
+  level: 'info',
+  timestamp: '2022-03-18 21:08:01'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 21:08:01'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 21:08:01'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 21:08:04'
+}
+{
+  message: { query: { address: 'test address' } },
+  level: 'info',
+  timestamp: '2022-03-18 21:08:07'
+}
+{
+  message: { query: { category: 'AI 2' } },
+  level: 'info',
+  timestamp: '2022-03-18 21:08:15'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-03-18 21:08:16'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 12:47:52'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 12:49:00'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 12:49:09'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 12:59:47'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:20:05'
+}
+{
+  message: {
+    createUserDBError: Error: Users validation failed: gender: Path `gender` is required., location: Path `location` is required., email: Path `email` is required., name: Path `name` is required.
+        at ValidationError.inspect (D:\projects\denicon\backend\node_modules\mongoose\lib\error\validation.js:48:26)
+        at formatValue (node:internal/util/inspect:782:19)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at inspect (node:internal/util/inspect:347:10)
+        at Format.transform (D:\projects\denicon\backend\node_modules\logform\pretty-print.js:27:19) {
+      errors: {
+        gender: ValidatorError: Path `gender` is required.
+            at validate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1330:13)
+            at SchemaString.SchemaType.doValidate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1314:7)
+            at D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:2751:18
+            at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+          properties: {
+            validator: [Function (anonymous)],
+            message: 'Path `gender` is required.',
+            type: 'required',
+            path: 'gender',
+            value: undefined
+          },
+          kind: 'required',
+          path: 'gender',
+          value: undefined,
+          reason: undefined,
+          [Symbol(mongoose:validatorError)]: true
+        },
+        location: ValidatorError: Path `location` is required.
+            at validate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1330:13)
+            at SchemaString.SchemaType.doValidate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1314:7)
+            at D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:2751:18
+            at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+          properties: {
+            validator: [Function (anonymous)],
+            message: 'Path `location` is required.',
+            type: 'required',
+            path: 'location',
+            value: undefined
+          },
+          kind: 'required',
+          path: 'location',
+          value: undefined,
+          reason: undefined,
+          [Symbol(mongoose:validatorError)]: true
+        },
+        email: ValidatorError: Path `email` is required.
+            at validate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1330:13)
+            at SchemaString.SchemaType.doValidate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1314:7)
+            at D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:2751:18
+            at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+          properties: {
+            validator: [Function (anonymous)],
+            message: 'Path `email` is required.',
+            type: 'required',
+            path: 'email',
+            value: undefined
+          },
+          kind: 'required',
+          path: 'email',
+          value: undefined,
+          reason: undefined,
+          [Symbol(mongoose:validatorError)]: true
+        },
+        name: ValidatorError: Path `name` is required.
+            at validate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1330:13)
+            at SchemaString.SchemaType.doValidate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1314:7)
+            at D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:2751:18
+            at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+          properties: {
+            validator: [Function (anonymous)],
+            message: 'Path `name` is required.',
+            type: 'required',
+            path: 'name',
+            value: undefined
+          },
+          kind: 'required',
+          path: 'name',
+          value: undefined,
+          reason: undefined,
+          [Symbol(mongoose:validatorError)]: true
+        }
+      },
+      _message: 'Users validation failed'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-04-23 13:20:19'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:21:21'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Mr Erik Douglas',
+        gender: 'male',
+        email: 'erik.douglas@example.com'
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:21:40'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:22:19'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Mr Esteban Suarez',
+        gender: 'male',
+        email: 'esteban.suarez@example.com'
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:22:36'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:26:27'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:26:33'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Madame Mara Perez',
+        gender: 'female',
+        email: 'mara.perez@example.com'
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:26:42'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:27:42'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Mr Morten Mauseth',
+        gender: 'male',
+        email: 'morten.mauseth@example.com'
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:28:51'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:29:33'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Mr Noah Kristensen',
+        gender: 'male',
+        email: 'noah.kristensen@example.com'
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:29:37'
+}
+{
+  message: {
+    createUserDBError: Error: Users validation failed: location: Path `location` is required.
+        at ValidationError.inspect (D:\projects\denicon\backend\node_modules\mongoose\lib\error\validation.js:48:26)
+        at formatValue (node:internal/util/inspect:782:19)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at inspect (node:internal/util/inspect:347:10)
+        at Format.transform (D:\projects\denicon\backend\node_modules\logform\pretty-print.js:27:19) {
+      errors: {
+        location: ValidatorError: Path `location` is required.
+            at validate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1330:13)
+            at SchemaString.SchemaType.doValidate (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1314:7)
+            at D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:2751:18
+            at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+          properties: {
+            validator: [Function (anonymous)],
+            message: 'Path `location` is required.',
+            type: 'required',
+            path: 'location',
+            value: undefined
+          },
+          kind: 'required',
+          path: 'location',
+          value: undefined,
+          reason: undefined,
+          [Symbol(mongoose:validatorError)]: true
+        }
+      },
+      _message: 'Users validation failed'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-04-23 13:29:37'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:30:15'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:30:27'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Mrs Georgia Tucker',
+        gender: 'female',
+        email: 'georgia.tucker@example.com',
+        location: {
+          street: { number: 5536, name: 'Green Rd' },
+          city: 'Elko',
+          state: 'South Dakota',
+          country: 'United States',
+          postcode: 39179,
+          coordinates: { latitude: '82.0614', longitude: '128.4482' },
+          timezone: { offset: '+7:00', description: 'Bangkok, Hanoi, Jakarta' }
+        }
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:30:31'
+}
+{
+  message: {
+    createUserDBError: Error: Users validation failed: location: Cast to string failed for value "{
+      street: { number: 5536, name: 'Green Rd' },
+      city: 'Elko',
+      state: 'South Dakota',
+      country: 'United States',
+      postcode: 39179,
+      coordinates: { latitude: '82.0614', longitude: '128.4482' },
+      timezone: { offset: '+7:00', description: 'Bangkok, Hanoi, Jakarta' }
+    }" (type Object) at path "location"
+        at ValidationError.inspect (D:\projects\denicon\backend\node_modules\mongoose\lib\error\validation.js:48:26)
+        at formatValue (node:internal/util/inspect:782:19)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at formatProperty (node:internal/util/inspect:1819:11)
+        at formatRaw (node:internal/util/inspect:1030:9)
+        at formatValue (node:internal/util/inspect:817:10)
+        at inspect (node:internal/util/inspect:347:10)
+        at Format.transform (D:\projects\denicon\backend\node_modules\logform\pretty-print.js:27:19) {
+      errors: {
+        location: CastError: Cast to string failed for value "{
+          street: { number: 5536, name: 'Green Rd' },
+          city: 'Elko',
+          state: 'South Dakota',
+          country: 'United States',
+          postcode: 39179,
+          coordinates: { latitude: '82.0614', longitude: '128.4482' },
+          timezone: { offset: '+7:00', description: 'Bangkok, Hanoi, Jakarta' }
+        }" (type Object) at path "location"
+            at SchemaString.cast (D:\projects\denicon\backend\node_modules\mongoose\lib\schema\string.js:603:11)
+            at SchemaString.SchemaType.applySetters (D:\projects\denicon\backend\node_modules\mongoose\lib\schematype.js:1189:12)
+            at model.$set (D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:1404:20)
+            at model.$set (D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:1148:14)
+            at model.Document (D:\projects\denicon\backend\node_modules\mongoose\lib\document.js:161:12)
+            at model.Model (D:\projects\denicon\backend\node_modules\mongoose\lib\model.js:115:12)
+            at new model (D:\projects\denicon\backend\node_modules\mongoose\lib\model.js:4835:15)
+            at Array.<anonymous> (D:\projects\denicon\backend\node_modules\mongoose\lib\model.js:3354:17)
+            at _start (D:\projects\denicon\backend\node_modules\mongoose\lib\helpers\parallelLimit.js:27:37)
+            at parallelLimit (D:\projects\denicon\backend\node_modules\mongoose\lib\helpers\parallelLimit.js:23:5) {
+          stringValue: '"{\n' +
+            "  street: { number: 5536, name: 'Green Rd' },\n" +
+            "  city: 'Elko',\n" +
+            "  state: 'South Dakota',\n" +
+            "  country: 'United States',\n" +
+            '  postcode: 39179,\n' +
+            "  coordinates: { latitude: '82.0614', longitude: '128.4482' },\n" +
+            "  timezone: { offset: '+7:00', description: 'Bangkok, Hanoi, Jakarta' }\n" +
+            '}"',
+          messageFormat: undefined,
+          kind: 'string',
+          value: {
+            street: { number: 5536, name: 'Green Rd' },
+            city: 'Elko',
+            state: 'South Dakota',
+            country: 'United States',
+            postcode: 39179,
+            coordinates: { latitude: '82.0614', longitude: '128.4482' },
+            timezone: { offset: '+7:00', description: 'Bangkok, Hanoi, Jakarta' }
+          },
+          path: 'location',
+          reason: null,
+          valueType: 'Object'
+        }
+      },
+      _message: 'Users validation failed'
+    }
+  },
+  level: 'error',
+  timestamp: '2022-04-23 13:30:31'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:30:53'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Mr Alfred Madsen',
+        gender: 'male',
+        email: 'alfred.madsen@example.com',
+        location: {
+          street: { number: 5494, name: 'Parkvænget' },
+          city: 'Agerbæk',
+          state: 'Hovedstaden',
+          country: 'Denmark',
+          postcode: 66636,
+          coordinates: { latitude: '-29.9537', longitude: '-83.4416' },
+          timezone: {
+            offset: '-6:00',
+            description: 'Central Time (US & Canada), Mexico City'
+          }
+        }
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:30:57'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:31:13'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:31:30'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:31:37'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Ms Vicky Thompson',
+        gender: 'female',
+        email: 'vicky.thompson@example.com',
+        location: 'United Kingdom'
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:31:40'
+}
+{
+  message: {
+    createUserDBError: MongoBulkWriteError: not authorized on demicon to execute command { insert: "users", documents: [ { name: "Ms Vicky Thompson", email: "vicky.thompson@example.com", location: "United Kingdom", gender: "female", _id: ObjectId('6263d58c8bab86710c0b4c27'), __v: 0, createdAt: new Date(1650709900037), updatedAt: new Date(1650709900037) } ], ordered: true, lsid: { id: UUID("eee13d7d-657e-4b25-a5c1-a754b685ddb9") }, $db: "demicon" }
+        at resultHandler (D:\projects\denicon\backend\node_modules\mongodb\src\bulk\common.ts:599:9)
+        at D:\projects\denicon\backend\node_modules\mongodb\src\utils.ts:521:9
+        at D:\projects\denicon\backend\node_modules\mongodb\src\operations\execute_operation.ts:135:9
+        at D:\projects\denicon\backend\node_modules\mongodb\src\cmap\connection_pool.ts:480:13
+        at handleOperationResult (D:\projects\denicon\backend\node_modules\mongodb\src\sdam\server.ts:615:12)
+        at Connection.onMessage (D:\projects\denicon\backend\node_modules\mongodb\src\cmap\connection.ts:440:11)
+        at MessageStream.<anonymous> (D:\projects\denicon\backend\node_modules\mongodb\src\cmap\connection.ts:267:56)
+        at MessageStream.emit (node:events:526:28)
+        at MessageStream.emit (node:domain:475:12)
+        at processIncomingData (D:\projects\denicon\backend\node_modules\mongodb\src\cmap\message_stream.ts:168:12) {
+      ok: 0,
+      code: 13,
+      codeName: 'Unauthorized',
+      writeErrors: [],
+      result: BulkWriteResult {
+        result: {
+          ok: 1,
+          writeErrors: [],
+          writeConcernErrors: [],
+          insertedIds: [
+            { index: 0, _id: new ObjectId("6263d58c8bab86710c0b4c27") }
+          ],
+          nInserted: 0,
+          nUpserted: 0,
+          nMatched: 0,
+          nModified: 0,
+          nRemoved: 0,
+          upserted: []
+        }
+      },
+      insertedDocs: [
+        {
+          name: 'Ms Vicky Thompson',
+          email: 'vicky.thompson@example.com',
+          location: 'United Kingdom',
+          gender: 'female',
+          _id: new ObjectId("6263d58c8bab86710c0b4c27"),
+          __v: 0,
+          createdAt: 2022-04-23T10:31:40.037Z,
+          updatedAt: 2022-04-23T10:31:40.037Z
+        }
+      ],
+      [Symbol(errorLabels)]: Set(0) {}
+    }
+  },
+  level: 'error',
+  timestamp: '2022-04-23 13:31:40'
+}
+{
+  message: { db: 'mongodb://localhost:27017/demicon' },
+  level: 'info',
+  timestamp: '2022-04-23 13:35:36'
+}
+{
+  message: {
+    db: 'mongodb+srv://mohamed:19934567@microservices.2mnvy.mongodb.net/demicon?retryWrites=true&w=majority'
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:35:47'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Miss Afet Egeli',
+        gender: 'female',
+        email: 'afet.egeli@example.com',
+        location: 'Turkey'
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:35:54'
+}
+{
+  message: {
+    createUserDB: [
+      {
+        name: 'Miss Afet Egeli',
+        email: 'afet.egeli@example.com',
+        location: 'Turkey',
+        gender: 'female',
+        _id: new ObjectId("6263d68a5a0e9702317be606"),
+        __v: 0,
+        createdAt: 2022-04-23T10:35:54.555Z,
+        updatedAt: 2022-04-23T10:35:54.555Z
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:35:54'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 13:37:12'
+}
+{
+  message: {
+    db: 'mongodb+srv://mohamed:19934567@microservices.2mnvy.mongodb.net/demicon?retryWrites=true&w=majority'
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:37:54'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Mrs Selma Olsen',
+        gender: 'female',
+        email: 'selma.olsen@example.com',
+        location: 'Denmark'
+      },
+      {
+        name: 'Mrs Samantha Chen',
+        gender: 'female',
+        email: 'samantha.chen@example.com',
+        location: 'New Zealand'
+      },
+      {
+        name: 'Miss آدرینا احمدی',
+        gender: 'female',
+        email: 'adryn.hmdy@example.com',
+        location: 'Iran'
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:38:00'
+}
+{
+  message: {
+    createUserDB: [
+      {
+        name: 'Mrs Selma Olsen',
+        email: 'selma.olsen@example.com',
+        location: 'Denmark',
+        gender: 'female',
+        _id: new ObjectId("6263d7088d9a67879514cdaf"),
+        __v: 0,
+        createdAt: 2022-04-23T10:38:00.829Z,
+        updatedAt: 2022-04-23T10:38:00.829Z
+      },
+      {
+        name: 'Mrs Samantha Chen',
+        email: 'samantha.chen@example.com',
+        location: 'New Zealand',
+        gender: 'female',
+        _id: new ObjectId("6263d7088d9a67879514cdb0"),
+        __v: 0,
+        createdAt: 2022-04-23T10:38:00.830Z,
+        updatedAt: 2022-04-23T10:38:00.830Z
+      },
+      {
+        name: 'Miss آدرینا احمدی',
+        email: 'adryn.hmdy@example.com',
+        location: 'Iran',
+        gender: 'female',
+        _id: new ObjectId("6263d7088d9a67879514cdb1"),
+        __v: 0,
+        createdAt: 2022-04-23T10:38:00.830Z,
+        updatedAt: 2022-04-23T10:38:00.830Z
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:38:01'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 13:38:07'
+}
+{
+  message: {
+    db: 'mongodb+srv://mohamed:19934567@microservices.2mnvy.mongodb.net/demicon?retryWrites=true&w=majority'
+  },
+  level: 'info',
+  timestamp: '2022-04-23 13:38:37'
+}
+{
+  message: { query: { category: '', address: '', isVirtual: '' } },
+  level: 'info',
+  timestamp: '2022-04-23 14:54:03'
+}
+{
+  message: { query: { category: '', address: '', isVirtual: '' } },
+  level: 'info',
+  timestamp: '2022-04-23 14:54:08'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 14:57:06'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 14:57:29'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 14:57:53'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 14:58:52'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 14:59:16'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 14:59:55'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:02:50'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:03:55'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:03:57'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:05:28'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:06:39'
+}
+{
+  message: {
+    db: 'mongodb+srv://mohamed:19934567@microservices.2mnvy.mongodb.net/demicon?retryWrites=true&w=majority'
+  },
+  level: 'info',
+  timestamp: '2022-04-23 15:09:01'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:09:07'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:10:31'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:10:45'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:11:25'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:12:45'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:13:00'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:13:27'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:15:06'
+}
+{
+  message: {
+    db: 'mongodb+srv://mohamed:19934567@microservices.2mnvy.mongodb.net/demicon?retryWrites=true&w=majority'
+  },
+  level: 'info',
+  timestamp: '2022-04-23 15:17:02'
+}
+{
+  message: {
+    db: 'mongodb+srv://mohamed:19934567@microservices.2mnvy.mongodb.net/demicon?retryWrites=true&w=majority'
+  },
+  level: 'info',
+  timestamp: '2022-04-23 15:17:12'
+}
+{
+  message: {
+    dataFotmat: [
+      {
+        name: 'Miss Andrea Cruz',
+        gender: 'female',
+        email: 'andrea.cruz@example.com',
+        location: 'Spain'
+      },
+      {
+        name: 'Miss Eloïse Gaillard',
+        gender: 'female',
+        email: 'eloise.gaillard@example.com',
+        location: 'France'
+      },
+      {
+        name: 'Mr Frankie Perry',
+        gender: 'male',
+        email: 'frankie.perry@example.com',
+        location: 'Ireland'
+      },
+      {
+        name: 'Mr Joel Niva',
+        gender: 'male',
+        email: 'joel.niva@example.com',
+        location: 'Finland'
+      },
+      {
+        name: 'Miss Begüm Tunçeri',
+        gender: 'female',
+        email: 'begum.tunceri@example.com',
+        location: 'Turkey'
+      },
+      {
+        name: 'Mrs Fatima Martin',
+        gender: 'female',
+        email: 'fatima.martin@example.com',
+        location: 'Spain'
+      },
+      {
+        name: 'Ms Özsu Atan',
+        gender: 'female',
+        email: 'ozsu.atan@example.com',
+        location: 'Turkey'
+      },
+      {
+        name: 'Mr Anton Rasmussen',
+        gender: 'male',
+        email: 'anton.rasmussen@example.com',
+        location: 'Denmark'
+      },
+      {
+        name: 'Mademoiselle Lilian Vidal',
+        gender: 'female',
+        email: 'lilian.vidal@example.com',
+        location: 'Switzerland'
+      },
+      {
+        name: 'Ms Elizabeth Evans',
+        gender: 'female',
+        email: 'elizabeth.evans@example.com',
+        location: 'New Zealand'
+      },
+      {
+        name: 'Mr Josephus Kartal',
+        gender: 'male',
+        email: 'josephus.kartal@example.com',
+        location: 'Netherlands'
+      },
+      {
+        name: 'Miss Phoebe Andrews',
+        gender: 'female',
+        email: 'phoebe.andrews@example.com',
+        location: 'Ireland'
+      },
+      {
+        name: 'Mr Brett Woods',
+        gender: 'male',
+        email: 'brett.woods@example.com',
+        location: 'United Kingdom'
+      },
+      {
+        name: 'Ms Ülkü Topaloğlu',
+        gender: 'female',
+        email: 'ulku.topaloglu@example.com',
+        location: 'Turkey'
+      },
+      {
+        name: 'Mr Jack Craig',
+        gender: 'male',
+        email: 'jack.craig@example.com',
+        location: 'Australia'
+      },
+      {
+        name: 'Mrs Asuncion Bravo',
+        gender: 'female',
+        email: 'asuncion.bravo@example.com',
+        location: 'Spain'
+      },
+      {
+        name: 'Mrs Helga Rezende',
+        gender: 'female',
+        email: 'helga.rezende@example.com',
+        location: 'Brazil'
+      },
+      {
+        name: 'Monsieur Florent Laurent',
+        gender: 'male',
+        email: 'florent.laurent@example.com',
+        location: 'Switzerland'
+      },
+      {
+        name: 'Mr Cody Harrison',
+        gender: 'male',
+        email: 'cody.harrison@example.com',
+        location: 'Ireland'
+      },
+      {
+        name: 'Mrs Latife Dağlaroğlu',
+        gender: 'female',
+        email: 'latife.daglaroglu@example.com',
+        location: 'Turkey'
+      },
+      {
+        name: 'Mr Clinton Douglas',
+        gender: 'male',
+        email: 'clinton.douglas@example.com',
+        location: 'Australia'
+      },
+      {
+        name: 'Mademoiselle Natalie Muller',
+        gender: 'female',
+        email: 'natalie.muller@example.com',
+        location: 'Switzerland'
+      },
+      {
+        name: 'Mr Stanley Barrett',
+        gender: 'male',
+        email: 'stanley.barrett@example.com',
+        location: 'United States'
+      },
+      {
+        name: 'Mr Take Schuurman',
+        gender: 'male',
+        email: 'take.schuurman@example.com',
+        location: 'Netherlands'
+      },
+      {
+        name: 'Mr Adam Johansen',
+        gender: 'male',
+        email: 'adam.johansen@example.com',
+        location: 'Denmark'
+      },
+      {
+        name: 'Mrs Rose Cook',
+        gender: 'female',
+        email: 'rose.cook@example.com',
+        location: 'United Kingdom'
+      },
+      {
+        name: 'Mrs Amy Williams',
+        gender: 'female',
+        email: 'amy.williams@example.com',
+        location: 'Ireland'
+      },
+      {
+        name: 'Mr Andres Cortes',
+        gender: 'male',
+        email: 'andres.cortes@example.com',
+        location: 'Spain'
+      },
+      {
+        name: 'Mr Arthur Campbell',
+        gender: 'male',
+        email: 'arthur.campbell@example.com',
+        location: 'Canada'
+      },
+      {
+        name: 'Miss Lindy School',
+        gender: 'female',
+        email: 'lindy.school@example.com',
+        location: 'Netherlands'
+      },
+      {
+        name: 'Mrs محیا کوتی',
+        gender: 'female',
+        email: 'mhy.khwty@example.com',
+        location: 'Iran'
+      },
+      {
+        name: 'Mr Matt Miles',
+        gender: 'male',
+        email: 'matt.miles@example.com',
+        location: 'Ireland'
+      },
+      {
+        name: 'Mr Aapo Toro',
+        gender: 'male',
+        email: 'aapo.toro@example.com',
+        location: 'Finland'
+      },
+      {
+        name: 'Mr Gonzalo Gomez',
+        gender: 'male',
+        email: 'gonzalo.gomez@example.com',
+        location: 'Spain'
+      },
+      {
+        name: 'Mr Peetu Rinne',
+        gender: 'male',
+        email: 'peetu.rinne@example.com',
+        location: 'Finland'
+      },
+      {
+        name: 'Mr Remco Braas',
+        gender: 'male',
+        email: 'remco.braas@example.com',
+        location: 'Netherlands'
+      },
+      {
+        name: 'Ms Siiri Autio',
+        gender: 'female',
+        email: 'siiri.autio@example.com',
+        location: 'Finland'
+      },
+      {
+        name: 'Mr Brayden Lawrence',
+        gender: 'male',
+        email: 'brayden.lawrence@example.com',
+        location: 'United States'
+      },
+      {
+        name: 'Mr Eirik Kryger',
+        gender: 'male',
+        email: 'eirik.kryger@example.com',
+        location: 'Norway'
+      },
+      {
+        name: 'Mrs Jill Howell',
+        gender: 'female',
+        email: 'jill.howell@example.com',
+        location: 'United States'
+      },
+      {
+        name: 'Miss Ruby Harris',
+        gender: 'female',
+        email: 'ruby.harris@example.com',
+        location: 'New Zealand'
+      },
+      {
+        name: 'Mrs Abby Allen',
+        gender: 'female',
+        email: 'abby.allen@example.com',
+        location: 'United Kingdom'
+      },
+      {
+        name: 'Mr Onni Laurila',
+        gender: 'male',
+        email: 'onni.laurila@example.com',
+        location: 'Finland'
+      },
+      {
+        name: 'Mrs یاسمین احمدی',
+        gender: 'female',
+        email: 'ysmyn.hmdy@example.com',
+        location: 'Iran'
+      },
+      {
+        name: 'Ms Hazel White',
+        gender: 'female',
+        email: 'hazel.white@example.com',
+        location: 'New Zealand'
+      },
+      {
+        name: 'Ms Carolina da Rocha',
+        gender: 'female',
+        email: 'carolina.darocha@example.com',
+        location: 'Brazil'
+      },
+      {
+        name: 'Mr Damasceno Nascimento',
+        gender: 'male',
+        email: 'damasceno.nascimento@example.com',
+        location: 'Brazil'
+      },
+      {
+        name: 'Mr Nedim Ijmker',
+        gender: 'male',
+        email: 'nedim.ijmker@example.com',
+        location: 'Netherlands'
+      },
+      {
+        name: 'Mr مانی رضایی',
+        gender: 'male',
+        email: 'mny.rdyy@example.com',
+        location: 'Iran'
+      },
+      {
+        name: 'Mr Enrique Gil',
+        gender: 'male',
+        email: 'enrique.gil@example.com',
+        location: 'Spain'
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 15:17:17'
+}
+{
+  message: {
+    createUserDB: [
+      {
+        name: 'Miss Andrea Cruz',
+        email: 'andrea.cruz@example.com',
+        location: 'Spain',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea51"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.321Z,
+        updatedAt: 2022-04-23T12:17:17.321Z
+      },
+      {
+        name: 'Miss Eloïse Gaillard',
+        email: 'eloise.gaillard@example.com',
+        location: 'France',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea52"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.321Z,
+        updatedAt: 2022-04-23T12:17:17.321Z
+      },
+      {
+        name: 'Mr Frankie Perry',
+        email: 'frankie.perry@example.com',
+        location: 'Ireland',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea53"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.321Z,
+        updatedAt: 2022-04-23T12:17:17.321Z
+      },
+      {
+        name: 'Mr Joel Niva',
+        email: 'joel.niva@example.com',
+        location: 'Finland',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea54"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.321Z,
+        updatedAt: 2022-04-23T12:17:17.321Z
+      },
+      {
+        name: 'Miss Begüm Tunçeri',
+        email: 'begum.tunceri@example.com',
+        location: 'Turkey',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea55"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.321Z,
+        updatedAt: 2022-04-23T12:17:17.321Z
+      },
+      {
+        name: 'Mrs Fatima Martin',
+        email: 'fatima.martin@example.com',
+        location: 'Spain',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea56"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Ms Özsu Atan',
+        email: 'ozsu.atan@example.com',
+        location: 'Turkey',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea57"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Mr Anton Rasmussen',
+        email: 'anton.rasmussen@example.com',
+        location: 'Denmark',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea58"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Mademoiselle Lilian Vidal',
+        email: 'lilian.vidal@example.com',
+        location: 'Switzerland',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea59"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Ms Elizabeth Evans',
+        email: 'elizabeth.evans@example.com',
+        location: 'New Zealand',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea5a"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Mr Josephus Kartal',
+        email: 'josephus.kartal@example.com',
+        location: 'Netherlands',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea5b"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Miss Phoebe Andrews',
+        email: 'phoebe.andrews@example.com',
+        location: 'Ireland',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea5c"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Mr Brett Woods',
+        email: 'brett.woods@example.com',
+        location: 'United Kingdom',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea5d"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Ms Ülkü Topaloğlu',
+        email: 'ulku.topaloglu@example.com',
+        location: 'Turkey',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea5e"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Mr Jack Craig',
+        email: 'jack.craig@example.com',
+        location: 'Australia',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea5f"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Mrs Asuncion Bravo',
+        email: 'asuncion.bravo@example.com',
+        location: 'Spain',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea60"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Mrs Helga Rezende',
+        email: 'helga.rezende@example.com',
+        location: 'Brazil',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea61"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Monsieur Florent Laurent',
+        email: 'florent.laurent@example.com',
+        location: 'Switzerland',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea62"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.322Z,
+        updatedAt: 2022-04-23T12:17:17.322Z
+      },
+      {
+        name: 'Mr Cody Harrison',
+        email: 'cody.harrison@example.com',
+        location: 'Ireland',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea63"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mrs Latife Dağlaroğlu',
+        email: 'latife.daglaroglu@example.com',
+        location: 'Turkey',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea64"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Clinton Douglas',
+        email: 'clinton.douglas@example.com',
+        location: 'Australia',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea65"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mademoiselle Natalie Muller',
+        email: 'natalie.muller@example.com',
+        location: 'Switzerland',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea66"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Stanley Barrett',
+        email: 'stanley.barrett@example.com',
+        location: 'United States',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea67"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Take Schuurman',
+        email: 'take.schuurman@example.com',
+        location: 'Netherlands',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea68"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Adam Johansen',
+        email: 'adam.johansen@example.com',
+        location: 'Denmark',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea69"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mrs Rose Cook',
+        email: 'rose.cook@example.com',
+        location: 'United Kingdom',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea6a"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mrs Amy Williams',
+        email: 'amy.williams@example.com',
+        location: 'Ireland',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea6b"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Andres Cortes',
+        email: 'andres.cortes@example.com',
+        location: 'Spain',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea6c"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Arthur Campbell',
+        email: 'arthur.campbell@example.com',
+        location: 'Canada',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea6d"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Miss Lindy School',
+        email: 'lindy.school@example.com',
+        location: 'Netherlands',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea6e"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mrs محیا کوتی',
+        email: 'mhy.khwty@example.com',
+        location: 'Iran',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea6f"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Matt Miles',
+        email: 'matt.miles@example.com',
+        location: 'Ireland',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea70"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Aapo Toro',
+        email: 'aapo.toro@example.com',
+        location: 'Finland',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea71"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Gonzalo Gomez',
+        email: 'gonzalo.gomez@example.com',
+        location: 'Spain',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea72"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Peetu Rinne',
+        email: 'peetu.rinne@example.com',
+        location: 'Finland',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea73"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.323Z,
+        updatedAt: 2022-04-23T12:17:17.323Z
+      },
+      {
+        name: 'Mr Remco Braas',
+        email: 'remco.braas@example.com',
+        location: 'Netherlands',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea74"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Ms Siiri Autio',
+        email: 'siiri.autio@example.com',
+        location: 'Finland',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea75"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Mr Brayden Lawrence',
+        email: 'brayden.lawrence@example.com',
+        location: 'United States',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea76"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Mr Eirik Kryger',
+        email: 'eirik.kryger@example.com',
+        location: 'Norway',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea77"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Mrs Jill Howell',
+        email: 'jill.howell@example.com',
+        location: 'United States',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea78"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Miss Ruby Harris',
+        email: 'ruby.harris@example.com',
+        location: 'New Zealand',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea79"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Mrs Abby Allen',
+        email: 'abby.allen@example.com',
+        location: 'United Kingdom',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea7a"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Mr Onni Laurila',
+        email: 'onni.laurila@example.com',
+        location: 'Finland',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea7b"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Mrs یاسمین احمدی',
+        email: 'ysmyn.hmdy@example.com',
+        location: 'Iran',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea7c"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Ms Hazel White',
+        email: 'hazel.white@example.com',
+        location: 'New Zealand',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea7d"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Ms Carolina da Rocha',
+        email: 'carolina.darocha@example.com',
+        location: 'Brazil',
+        gender: 'female',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea7e"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Mr Damasceno Nascimento',
+        email: 'damasceno.nascimento@example.com',
+        location: 'Brazil',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea7f"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Mr Nedim Ijmker',
+        email: 'nedim.ijmker@example.com',
+        location: 'Netherlands',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea80"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Mr مانی رضایی',
+        email: 'mny.rdyy@example.com',
+        location: 'Iran',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea81"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      },
+      {
+        name: 'Mr Enrique Gil',
+        email: 'enrique.gil@example.com',
+        location: 'Spain',
+        gender: 'male',
+        _id: new ObjectId("6263ee4ddfc0edeed55cea82"),
+        __v: 0,
+        createdAt: 2022-04-23T12:17:17.324Z,
+        updatedAt: 2022-04-23T12:17:17.324Z
+      }
+    ]
+  },
+  level: 'info',
+  timestamp: '2022-04-23 15:17:17'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:17:22'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:17:27'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:18:01'
+}
+{
+  message: {
+    db: 'mongodb+srv://mohamed:19934567@microservices.2mnvy.mongodb.net/demicon?retryWrites=true&w=majority'
+  },
+  level: 'info',
+  timestamp: '2022-04-23 15:37:11'
+}
+{
+  message: {
+    db: 'mongodb+srv://mohamed:19934567@microservices.2mnvy.mongodb.net/demicon?retryWrites=true&w=majority'
+  },
+  level: 'info',
+  timestamp: '2022-04-23 15:37:25'
+}
+{
+  message: {
+    db: 'mongodb+srv://mohamed:19934567@microservices.2mnvy.mongodb.net/demicon?retryWrites=true&w=majority'
+  },
+  level: 'info',
+  timestamp: '2022-04-23 15:37:32'
+}
+{
+  message: {
+    db: 'mongodb+srv://mohamed:19934567@microservices.2mnvy.mongodb.net/demicon?retryWrites=true&w=majority'
+  },
+  level: 'info',
+  timestamp: '2022-04-23 15:37:48'
+}
+{
+  message: { query: {} },
+  level: 'info',
+  timestamp: '2022-04-23 15:40:00'
+}
